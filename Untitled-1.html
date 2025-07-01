@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GI Symptom Guide | Complete Digestive Health Information Center</title>
+    <meta name="description" content="Comprehensive guide to digestive symptoms, GI conditions, treatment options, and dietary recommendations. Professional medical information for better gut health.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson Chatbot</title>
+
+
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #ffffff;
+            font-weight: 400;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .wide-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: #1a252f;
+        }
+        
+        h1 { font-size: 3.2rem; }
+        h2 { font-size: 2.4rem; }
+        h3 { font-size: 1.8rem; }
+        h4 { font-size: 1.4rem; }
+        h5 { font-size: 1.2rem; }
+        h6 { font-size: 1rem; }
+        
+        p {
+            margin-bottom: 1.2em;
+            font-size: 1.05rem;
+            color: #34495e;
+        }
+        
+        .lead {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8e6cf 0%, #dcedc8 100%);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #adb3b9 50%, #2c3e50 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="medical" width="50" height="50" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="30" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="25" cy="45" r="0.8" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23medical)"/></svg>');
+            opacity: 0.4;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .header-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+            color: #3498db;
+        }
+        
+        .main-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .main-subtitle {
+            font-size: 1.4rem;
+            font-weight: 300;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        /* Navigation */
+        .nav-section {
+            background: #f8f9fa;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-link {
+            color: #495057;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        
+        .nav-link:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Introduction Section */
+        .intro-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+        
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .intro-content h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+        
+        .intro-stats {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .stat-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #e74c3c;
+            display: block;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Common Symptoms Section */
+        .symptoms-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .symptoms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .symptom-card {
+            background: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .symptom-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+        }
+        
+        .symptom-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+        
+        .symptom-icon {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+        
+        .symptom-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .symptom-description {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .symptom-causes {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        
+        .symptom-causes h5 {
+            color: #495057;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .causes-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .causes-list li {
+            padding: 0.2rem 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .causes-list li::before {
+            content: '• ';
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        /* Conditions Section */
+        .conditions-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f1f2f6 0%, #ffffff 100%);
+        }
+        
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+        
+        .condition-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .condition-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .condition-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .condition-icon {
+            font-size: 2rem;
+            color: #e74c3c;
+            margin-right: 1rem;
+            width: 50px;
+            text-align: center;
+        }
+        
+        .condition-title {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #2c3e50;
+        }
+        
+        .condition-overview {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .condition-details {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .detail-section {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        
+        .detail-title {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .detail-content {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* Treatment Section */
+        .treatment-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .treatment-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .treatment-category {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .treatment-icon {
+            font-size: 3rem;
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+        
+        .treatment-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .treatment-list {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .treatment-list li {
+            padding: 0.5rem 0;
+            color: #666;
+            border-bottom: 1px solid #f1f2f6;
+        }
+        
+        .treatment-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .treatment-list li::before {
+            content: '✓ ';
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        /* Diet Section */
+        .diet-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%);
+        }
+        
+        .diet-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .diet-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+        
+        .diet-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .diet-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .good-foods .diet-icon { color: #27ae60; }
+        .avoid-foods .diet-icon { color: #e74c3c; }
+        
+        .diet-title {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+        
+        .good-foods .diet-title { color: #27ae60; }
+        .avoid-foods .diet-title { color: #e74c3c; }
+        
+        .food-categories {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .food-category {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        
+        .category-title {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .food-list {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* When to See Doctor Section */
+        .doctor-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+        }
+        
+        .warning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .warning-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #e74c3c;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .warning-icon {
+            font-size: 1.5rem;
+            color: #e74c3c;
+            margin-bottom: 0.5rem;
+        }
+        
+        .warning-text {
+            color: #2c3e50;
+            font-weight: 500;
+            margin: 0;
+        }
+        
+        /* Prevention Tips */
+        .prevention-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .tip-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+        
+        .tip-icon {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+        
+        .tip-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .tip-description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .faq-list {
+            max-width: 800px;
+            margin: 2rem auto 0;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            background: #2c3e50;
+            color: white;
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+        
+        .faq-question:hover {
+            background: #34495e;
+        }
+        
+        .faq-answer {
+            padding: 1.5rem;
+            color: #666;
+            line-height: 1.6;
+            border-top: 1px solid #f1f2f6;
+        }
+        
+        /* Resources Section */
+        .resources-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .resource-card {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(52, 152, 219, 0.3);
+        }
+        
+        .resource-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        
+        .resource-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .resource-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 25px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-link:hover {
+            background: rgba(255,255,255,0.2);
+            border-color: white;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            color: #3498db;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #3498db;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 1rem;
+            color: #95a5a6;
+            font-size: 0.85rem;
+        }
+        
+        /* Disclaimer */
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .disclaimer-icon {
+            font-size: 2rem;
+            color: #f39c12;
+            margin-bottom: 1rem;
+        }
+        
+        .disclaimer-title {
+            color: #d68910;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .disclaimer-text {
+            color: #856404;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .main-title {
+                font-size: 2.5rem;
+            }
+            
+            .main-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            h3 { font-size: 1.4rem; }
+            
+            .intro-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .diet-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .nav-menu {
+                gap: 1rem;
+            }
+            
+            .nav-link {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 2rem;
+            }
+            
+            .symptoms-grid,
+            .conditions-grid,
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .symptom-card,
+            .condition-card,
+            .tip-card {
+                padding: 1.5rem;
+            }
+        }
+        
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Smooth scroll offset for sticky nav */
+        .section {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content fade-in">
+                <div class="header-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h1 class="main-title">GI Symptom Guide</h1>
+                <p class="main-subtitle" style="color:#00479d">Complete Digestive Health Information Center - Understanding Symptoms, Conditions & Treatment Options</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-section">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#overview" class="nav-link">Overview</a></li>
+                <li><a href="#symptoms" class="nav-link">Common Symptoms</a></li>
+                <li><a href="#conditions" class="nav-link">GI Conditions</a></li>
+                <li><a href="#treatment" class="nav-link">Treatment Options</a></li>
+                <li><a href="#diet" class="nav-link">Diet & Nutrition</a></li>
+                <li><a href="#prevention" class="nav-link">Prevention</a></li>
+                <li><a href="#resources" class="nav-link">Medical Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="overview" class="intro-section section">
+        <div class="container">
+            <div class="intro-grid fade-in">
+                <div class="intro-content">
+                    <h2>Understanding Digestive Health</h2>
+                    <p class="lead">Your digestive system is a complex network of organs working together to break down food, absorb nutrients, and eliminate waste. When this system encounters problems, it can significantly impact your quality of life.</p>
+                    
+                    <p>This comprehensive guide provides detailed information about common gastrointestinal symptoms, conditions, and treatment approaches. Whether you're experiencing occasional digestive discomfort or managing a chronic condition, understanding your symptoms is the first step toward better health.</p>
+                    
+                    <p>Our evidence-based information covers everything from <span class="highlight">common symptoms like bloating and heartburn</span> to more complex conditions requiring medical attention. Remember, while this guide is informative, it should never replace professional medical advice.</p>
+                </div>
+                
+                <div class="intro-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">60-70M</span>
+                        <span class="stat-label">Americans affected by digestive diseases</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">35%</span>
+                        <span class="stat-label">Adults experience frequent heartburn</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10-15%</span>
+                        <span class="stat-label">Population has Irritable Bowel Syndrome</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Symptoms Section -->
+    <section id="symptoms" class="symptoms-section section">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 1rem;">Common Digestive Symptoms</h2>
+            <p class="lead fade-in" style="text-align: center; max-width: 700px; margin: 0 auto;">Digestive symptoms can range from mild discomfort to severe pain. Understanding these symptoms helps identify potential underlying conditions.</p>
+            
+            <div class="symptoms-grid">
+                <div class="symptom-card fade-in">
+                    <div class="symptom-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="symptom-title">Heartburn & Acid Reflux</h3>
+                    <p class="symptom-description">Burning sensation in the chest, often after eating, caused by stomach acid flowing back into the esophagus.</p>
+                    <div class="symptom-causes">
+                        <h5>Common Triggers:</h5>
+                        <ul class="causes-list">
+                            <li>Spicy or fatty foods</li>
+                            <li>Citrus fruits and tomatoes</li>
+                            <li>Chocolate and caffeine</li>
+                            <li>Large meals before bedtime</li>
+                            <li>Smoking and alcohol</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="symptom-card fade-in">
+                    <div class="symptom-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3 class="symptom-title">Bloating & Gas</h3>
+                    <p class="symptom-description">Feeling of fullness and distension in the abdomen, often accompanied by excessive gas production.</p>
+                    <div class="symptom-causes">
+                        <h5>Common Causes:</h5>
+                        <ul class="causes-list">
+                            <li>High-fiber foods (beans, broccoli)</li>
+                            <li>Carbonated beverages</li>
+                            <li>Eating too quickly</li>
+                            <li>Food intolerances (lactose, gluten)</li>
+                            <li>Bacterial overgrowth</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="symptom-card fade-in">
+                    <div class="symptom-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="symptom-title">Abdominal Pain</h3>
+                    <p class="symptom-description">Pain or discomfort in the stomach area, which can be sharp, dull, cramping, or constant.</p>
+                    <div class="symptom-causes">
+                        <h5>Potential Causes:</h5>
+                        <ul class="causes-list">
+                            <li>Gastritis or stomach ulcers</li>
+                            <li>Inflammatory bowel disease</li>
+                            <li>Appendicitis (emergency)</li>
+                            <li>Gallbladder problems</li>
+                            <li>Kidney stones</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="symptom-card fade-in">
+                    <div class="symptom-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="symptom-title">Diarrhea</h3>
+                    <p class="symptom-description">Loose, watery stools occurring more than three times per day, often with urgency.</p>
+                    <div class="symptom-causes">
+                        <h5>Common Triggers:</h5>
+                        <ul class="causes-list">
+                            <li>Viral or bacterial infections</li>
+                            <li>Food poisoning</li>
+                            <li>Medications (antibiotics)</li>
+                            <li>Inflammatory conditions</li>
+                            <li>Stress and anxiety</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="symptom-card fade-in">
+                    <div class="symptom-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="symptom-title">Constipation</h3>
+                    <p class="symptom-description">Difficulty passing stools or infrequent bowel movements (less than 3 times per week).</p>
+                    <div class="symptom-causes">
+                        <h5>Contributing Factors:</h5>
+                        <ul class="causes-list">
+                            <li>Low fiber diet</li>
+                            <li>Dehydration</li>
+                            <li>Lack of physical activity</li>
+                            <li>Certain medications</li>
+                            <li>Thyroid disorders</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="symptom-card fade-in">
+                    <div class="symptom-icon">
+                        <i class="fas fa-dizzy"></i>
+                    </div>
+                    <h3 class="symptom-title">Nausea & Vomiting</h3>
+                    <p class="symptom-description">Feeling of sickness in the stomach, often leading to the urge to vomit or actual vomiting.</p>
+                    <div class="symptom-causes">
+                        <h5>Possible Causes:</h5>
+                        <ul class="causes-list">
+                            <li>Food poisoning or gastroenteritis</li>
+                            <li>Motion sickness</li>
+                            <li>Pregnancy (morning sickness)</li>
+                            <li>Migraines</li>
+                            <li>Medication side effects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GI Conditions Section -->
+    <section id="conditions" class="conditions-section section">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 1rem;">Common GI Conditions</h2>
+            <p class="lead fade-in" style="text-align: center; max-width: 800px; margin: 0 auto;">Understanding major digestive conditions, their symptoms, and management approaches can help you make informed healthcare decisions.</p>
+            
+            <div class="conditions-grid">
+                <div class="condition-card fade-in">
+                    <div class="condition-header">
+                        <div class="condition-icon">
+                            <i class="fas fa-burn"></i>
+                        </div>
+                        <h3 class="condition-title">GERD (Gastroesophageal Reflux Disease)</h3>
+                    </div>
+                    <p class="condition-overview">Chronic condition where stomach acid frequently flows back into the esophagus, causing irritation and inflammation.</p>
+                    
+                    <div class="condition-details">
+                        <div class="detail-section">
+                            <div class="detail-title">Symptoms</div>
+                            <div class="detail-content">Persistent heartburn, regurgitation, chest pain, difficulty swallowing, chronic cough, hoarse voice</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Risk Factors</div>
+                            <div class="detail-content">Obesity, pregnancy, smoking, certain foods, hiatal hernia, delayed stomach emptying</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Management</div>
+                            <div class="detail-content">Lifestyle changes, dietary modifications, weight loss, medications (PPIs, H2 blockers), surgery in severe cases</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="condition-card fade-in">
+                    <div class="condition-header">
+                        <div class="condition-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <h3 class="condition-title">Irritable Bowel Syndrome (IBS)</h3>
+                    </div>
+                    <p class="condition-overview">Functional digestive disorder characterized by recurring abdominal pain and changes in bowel habits without structural abnormalities.</p>
+                    
+                    <div class="condition-details">
+                        <div class="detail-section">
+                            <div class="detail-title">Symptoms</div>
+                            <div class="detail-content">Abdominal pain, bloating, gas, diarrhea and/or constipation, mucus in stool, feeling of incomplete evacuation</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Triggers</div>
+                            <div class="detail-content">Stress, certain foods (FODMAPs), hormonal changes, infections, medications</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Treatment</div>
+                            <div class="detail-content">Dietary changes (low FODMAP), stress management, probiotics, medications for specific symptoms</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="condition-card fade-in">
+                    <div class="condition-header">
+                        <div class="condition-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <h3 class="condition-title">Inflammatory Bowel Disease (IBD)</h3>
+                    </div>
+                    <p class="condition-overview">Group of chronic inflammatory conditions affecting the digestive tract, primarily Crohn's disease and ulcerative colitis.</p>
+                    
+                    <div class="condition-details">
+                        <div class="detail-section">
+                            <div class="detail-title">Symptoms</div>
+                            <div class="detail-content">Persistent diarrhea, abdominal pain, blood in stool, weight loss, fatigue, reduced appetite</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Complications</div>
+                            <div class="detail-content">Intestinal blockage, ulcers, fistulas, increased colon cancer risk, malnutrition</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Treatment</div>
+                            <div class="detail-content">Anti-inflammatory drugs, immune system suppressors, biologics, nutritional therapy, surgery when needed</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="condition-card fade-in">
+                    <div class="condition-header">
+                        <div class="condition-icon">
+                            <i class="fas fa-circle-notch"></i>
+                        </div>
+                        <h3 class="condition-title">Peptic Ulcers</h3>
+                    </div>
+                    <p class="condition-overview">Open sores that develop on the inner lining of the stomach, small intestine, or esophagus due to acid erosion.</p>
+                    
+                    <div class="condition-details">
+                        <div class="detail-section">
+                            <div class="detail-title">Symptoms</div>
+                            <div class="detail-content">Burning stomach pain, bloating, heartburn, nausea, intolerance to fatty foods, weight loss</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Causes</div>
+                            <div class="detail-content">H. pylori bacterial infection, long-term NSAID use, excessive alcohol, stress, smoking</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Treatment</div>
+                            <div class="detail-content">Antibiotics for H. pylori, acid-reducing medications, lifestyle modifications, surgery for complications</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="condition-card fade-in">
+                    <div class="condition-header">
+                        <div class="condition-icon">
+                            <i class="fas fa-search-minus"></i>
+                        </div>
+                        <h3 class="condition-title">Celiac Disease</h3>
+                    </div>
+                    <p class="condition-overview">Autoimmune disorder where gluten consumption leads to damage in the small intestine, affecting nutrient absorption.</p>
+                    
+                    <div class="condition-details">
+                        <div class="detail-section">
+                            <div class="detail-title">Symptoms</div>
+                            <div class="detail-content">Diarrhea, abdominal pain, bloating, weight loss, fatigue, skin rash, iron deficiency anemia</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Diagnosis</div>
+                            <div class="detail-content">Blood tests for antibodies, genetic testing, small intestine biopsy, improvement on gluten-free diet</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Management</div>
+                            <div class="detail-content">Strict lifelong gluten-free diet, nutritional supplements, regular monitoring, support groups</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="condition-card fade-in">
+                    <div class="condition-header">
+                        <div class="condition-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="condition-title">Gallbladder Disease</h3>
+                    </div>
+                    <p class="condition-overview">Conditions affecting the gallbladder, including gallstones, inflammation, and functional disorders.</p>
+                    
+                    <div class="condition-details">
+                        <div class="detail-section">
+                            <div class="detail-title">Symptoms</div>
+                            <div class="detail-content">Severe abdominal pain (especially after fatty meals), nausea, vomiting, bloating, indigestion</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Risk Factors</div>
+                            <div class="detail-content">Female gender, age over 40, obesity, rapid weight loss, high-fat diet, certain medications</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Treatment</div>
+                            <div class="detail-content">Dietary changes, medications to dissolve stones, shock wave therapy, surgical removal (cholecystectomy)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Options Section -->
+    <section id="treatment" class="treatment-section section">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 1rem;">Treatment Approaches</h2>
+            <p class="lead fade-in" style="text-align: center; max-width: 700px; margin: 0 auto;">Digestive conditions are treated using various approaches, often combining lifestyle changes, medications, and medical procedures.</p>
+            
+            <div class="treatment-categories">
+                <div class="treatment-category fade-in">
+                    <div class="treatment-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="treatment-title">Lifestyle Modifications</h3>
+                    <ul class="treatment-list">
+                        <li>Dietary changes and meal timing</li>
+                        <li>Regular exercise and physical activity</li>
+                        <li>Stress management techniques</li>
+                        <li>Weight management</li>
+                        <li>Smoking cessation</li>
+                        <li>Sleep hygiene improvement</li>
+                    </ul>
+                </div>
+                
+                <div class="treatment-category fade-in">
+                    <div class="treatment-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="treatment-title">Medications</h3>
+                    <ul class="treatment-list">
+                        <li>Proton pump inhibitors (PPIs)</li>
+                        <li>H2 receptor blockers</li>
+                        <li>Antacids for quick relief</li>
+                        <li>Antispasmodics for cramping</li>
+                        <li>Probiotics for gut health</li>
+                        <li>Anti-inflammatory drugs</li>
+                    </ul>
+                </div>
+                
+                <div class="treatment-category fade-in">
+                    <div class="treatment-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="treatment-title">Medical Procedures</h3>
+                    <ul class="treatment-list">
+                        <li>Endoscopy for diagnosis</li>
+                        <li>Colonoscopy screening</li>
+                        <li>Surgical interventions</li>
+                        <li>Balloon dilation</li>
+                        <li>Botox injections</li>
+                        <li>Radiofrequency therapy</li>
+                    </ul>
+                </div>
+                
+                <div class="treatment-category fade-in">
+                    <div class="treatment-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="treatment-title">Alternative Therapies</h3>
+                    <ul class="treatment-list">
+                        <li>Acupuncture for pain relief</li>
+                        <li>Herbal supplements</li>
+                        <li>Meditation and mindfulness</li>
+                        <li>Yoga and tai chi</li>
+                        <li>Massage therapy</li>
+                        <li>Hypnotherapy for IBS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diet and Nutrition Section -->
+    <section id="diet" class="diet-section section">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 1rem;">Diet & Nutrition for Digestive Health</h2>
+            <p class="lead fade-in" style="text-align: center; max-width: 800px; margin: 0 auto;">Proper nutrition plays a crucial role in maintaining digestive health and managing GI conditions. Understanding what to eat and what to avoid can significantly improve your symptoms.</p>
+            
+            <div class="diet-content">
+                <div class="diet-card good-foods fade-in">
+                    <div class="diet-header">
+                        <div class="diet-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 class="diet-title">Foods to Include</h3>
+                    </div>
+                    
+                    <div class="food-categories">
+                        <div class="food-category">
+                            <div class="category-title">High-Fiber Foods</div>
+                            <div class="food-list">Oats, quinoa, brown rice, vegetables, fruits, legumes, nuts, seeds</div>
+                        </div>
+                        
+                        <div class="food-category">
+                            <div class="category-title">Probiotic Foods</div>
+                            <div class="food-list">Yogurt, kefir, sauerkraut, kimchi, miso, tempeh, kombucha</div>
+                        </div>
+                        
+                        <div class="food-category">
+                            <div class="category-title">Anti-inflammatory Foods</div>
+                            <div class="food-list">Fatty fish, olive oil, leafy greens, berries, turmeric, ginger</div>
+                        </div>
+                        
+                        <div class="food-category">
+                            <div class="category-title">Digestive Aids</div>
+                            <div class="food-list">Peppermint tea, chamomile, fennel, papaya, pineapple, bone broth</div>
+                        </div>
+                        
+                        <div class="food-category">
+                            <div class="category-title">Hydration</div>
+                            <div class="food-list">Water, herbal teas, coconut water, vegetable juices</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="diet-card avoid-foods fade-in">
+                    <div class="diet-header">
+                        <div class="diet-icon">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                        <h3 class="diet-title">Foods to Limit or Avoid</h3>
+                    </div>
+                    
+                    <div class="food-categories">
+                        <div class="food-category">
+                            <div class="category-title">High-Fat Foods</div>
+                            <div class="food-list">Fried foods, fatty meats, full-fat dairy, processed snacks</div>
+                        </div>
+                        
+                        <div class="food-category">
+                            <div class="category-title">Spicy & Acidic Foods</div>
+                            <div class="food-list">Hot peppers, citrus fruits, tomatoes, vinegar-based foods</div>
+                        </div>
+                        
+                        <div class="food-category">
+                            <div class="category-title">Gas-Producing Foods</div>
+                            <div class="food-list">Beans, cabbage, onions, carbonated drinks, sugar alcohols</div>
+                        </div>
+                        
+                        <div class="food-category">
+                            <div class="category-title">Processed Foods</div>
+                            <div class="food-list">Fast food, packaged snacks, artificial sweeteners, preservatives</div>
+                        </div>
+                        
+                        <div class="food-category">
+                            <div class="category-title">Triggers</div>
+                            <div class="food-list">Alcohol, caffeine, chocolate, mint (for GERD), gluten (for celiac)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="disclaimer fade-in">
+                <div class="disclaimer-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <h4 class="disclaimer-title">Dietary Guidance Notice</h4>
+                <p class="disclaimer-text">
+                    Individual dietary needs vary significantly based on specific conditions, allergies, and personal tolerance. 
+                    Always consult with a registered dietitian or healthcare provider before making major dietary changes, 
+                    especially if you have diagnosed digestive conditions or take medications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- When to See a Doctor Section -->
+    <section id="doctor" class="doctor-section section">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 1rem;">When to Seek Medical Attention</h2>
+            <p class="lead fade-in" style="text-align: center; max-width: 700px; margin: 0 auto;">Certain digestive symptoms require immediate medical evaluation. Don't ignore these warning signs.</p>
+            
+            <div class="warning-grid">
+                <div class="warning-item fade-in">
+                    <div class="warning-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <p class="warning-text">Severe, sudden abdominal pain</p>
+                </div>
+                
+                <div class="warning-item fade-in">
+                    <div class="warning-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <p class="warning-text">Blood in stool or vomit</p>
+                </div>
+                
+                <div class="warning-item fade-in">
+                    <div class="warning-icon">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <p class="warning-text">Unexplained weight loss</p>
+                </div>
+                
+                <div class="warning-item fade-in">
+                    <div class="warning-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <p class="warning-text">Persistent fever with GI symptoms</p>
+                </div>
+                
+                <div class="warning-item fade-in">
+                    <div class="warning-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <p class="warning-text">Inability to pass gas or stool</p>
+                </div>
+                
+                <div class="warning-item fade-in">
+                    <div class="warning-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <p class="warning-text">Symptoms lasting more than 2 weeks</p>
+                </div>
+                
+                <div class="warning-item fade-in">
+                    <div class="warning-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <p class="warning-text">Difficulty swallowing</p>
+                </div>
+                
+                <div class="warning-item fade-in">
+                    <div class="warning-icon">
+                        <i class="fas fa-tired"></i>
+                    </div>
+                    <p class="warning-text">Severe dehydration or weakness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prevention Section -->
+    <section id="prevention" class="prevention-section section">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 1rem;">Prevention & Daily Health Tips</h2>
+            <p class="lead fade-in" style="text-align: center; max-width: 700px; margin: 0 auto;">Maintaining good digestive health through daily habits can prevent many GI problems and improve overall well-being.</p>
+            
+            <div class="tips-grid">
+                <div class="tip-card fade-in">
+                    <div class="tip-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="tip-title">Eat Fiber-Rich Foods</h3>
+                    <p class="tip-description">Include 25-35 grams of fiber daily from fruits, vegetables, whole grains, and legumes to promote healthy digestion and regular bowel movements.</p>
+                </div>
+                
+                <div class="tip-card fade-in">
+                    <div class="tip-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="tip-title">Stay Hydrated</h3>
+                    <p class="tip-description">Drink 8-10 glasses of water daily to help digest food, absorb nutrients, and prevent constipation. Limit dehydrating beverages like alcohol and caffeine.</p>
+                </div>
+                
+                <div class="tip-card fade-in">
+                    <div class="tip-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="tip-title">Practice Mindful Eating</h3>
+                    <p class="tip-description">Eat slowly, chew thoroughly, and avoid distractions during meals. This aids digestion and helps prevent overeating and bloating.</p>
+                </div>
+                
+                <div class="tip-card fade-in">
+                    <div class="tip-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="tip-title">Exercise Regularly</h3>
+                    <p class="tip-description">Engage in 30 minutes of moderate activity most days to stimulate digestive muscles and promote healthy gut bacteria.</p>
+                </div>
+                
+                <div class="tip-card fade-in">
+                    <div class="tip-icon">
+                        <i class="fas fa-bacteria"></i>
+                    </div>
+                    <h3 class="tip-title">Support Gut Microbiome</h3>
+                    <p class="tip-description">Include probiotic foods like yogurt and fermented vegetables, and prebiotic foods like garlic and onions to maintain healthy gut bacteria.</p>
+                </div>
+                
+                <div class="tip-card fade-in">
+                    <div class="tip-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3 class="tip-title">Manage Stress</h3>
+                    <p class="tip-description">Practice stress-reduction techniques like meditation, yoga, or deep breathing, as stress can significantly impact digestive health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section section">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 1rem;">Frequently Asked Questions</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What's the difference between IBS and IBD?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" style="display: none;">
+                        IBS (Irritable Bowel Syndrome) is a functional disorder affecting how the bowel works, without visible inflammation. IBD (Inflammatory Bowel Disease) includes Crohn's disease and ulcerative colitis, which involve chronic inflammation and tissue damage in the digestive tract.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How much fiber should I eat daily?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" style="display: none;">
+                        Adults should aim for 25-35 grams of fiber daily. Increase gradually to avoid gas and bloating. Include both soluble fiber (oats, apples) and insoluble fiber (whole grains, vegetables) for optimal digestive health.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Are probiotics beneficial for everyone?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" style="display: none;">
+                        Probiotics can be beneficial for many people, especially those with digestive issues, after antibiotic use, or with compromised immune systems. However, people with severe illness or compromised immune systems should consult healthcare providers before use.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>When should I be concerned about heartburn?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" style="display: none;">
+                        Seek medical attention if heartburn occurs more than twice weekly, interferes with daily activities, causes chest pain, difficulty swallowing, persistent cough, or doesn't improve with over-the-counter medications.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can stress really affect digestion?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" style="display: none;">
+                        Yes, stress significantly impacts digestion through the gut-brain connection. It can alter gut bacteria, increase acid production, change gut motility, and worsen conditions like IBS. Managing stress is crucial for digestive health.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources-section section">
+       
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Medical Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="#symptoms">Common Symptoms</a></li>
+                        <li><a href="#conditions">GI Conditions</a></li>
+                        <li><a href="#treatment">Treatment Options</a></li>
+                        <li><a href="#prevention">Prevention Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Health Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#diet">Diet Guidelines</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#resources">Medical Resources</a></li>
+                        <li><a href="#doctor">When to See Doctor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Professional Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.gastro.org" target="_blank" rel="noopener">American Gastroenterological Association</a></li>
+                        <li><a href="https://www.worldgastroenterology.org" target="_blank" rel="noopener">World Gastroenterology Organisation</a></li>
+                        <li><a href="https://www.asge.org" target="_blank" rel="noopener">American Society for Gastrointestinal Endoscopy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Emergency Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:108">Emergency: 108</a></li>
+                        <li><a href="https://www.poison.org" target="_blank" rel="noopener">Poison Control</a></li>
+                        <li><a href="https://findahealthcenter.hrsa.gov" target="_blank" rel="noopener">Find Health Centers</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom" style="background: #18222e; border-radius: 8px; margin-top: 1.5rem; padding: 1.2rem 0;">
+                <p style="color: #ffe082; font-weight: bold; font-family: 'Merriweather', serif; font-size: 1.05rem; letter-spacing: 0.5px;"></p>
+                    © 2025 GI Symptom Guide - Educational Resource. This website provides general medical information for educational purposes only. Always consult healthcare professionals for medical advice, diagnosis, and treatment.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+
+            integrationID: "4f46301c-048a-4ddd-b5b6-286d9d5a82af", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "01351b2d-b541-4df6-9685-ee184c5310e6", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +(window.watsonAssistantChatOptions.clientVersion || 'latest') +
+              "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        }, 0);
+
+
+
+
+
+        // Smooth scrolling for navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add fade-in animation to elements as they come into view
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationDelay = Math.random() * 0.2 + 's';
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+
+            // Smooth scrolling for navigation
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add active class to navigation based on scroll position
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('.section');
+                const scrollPos = window.scrollY + 100;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+
+                    if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        if (navLink) navLink.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        // FAQ Toggle Function
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                answer.style.display = 'none';
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+
+        // Add hover effects to cards
+        const cards = document.querySelectorAll('.symptom-card, .condition-card, .tip-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Track clicks for analytics (optional)
+        const trackableElements = document.querySelectorAll('.resource-link, .footer-links a');
+        trackableElements.forEach(element => {
+            element.addEventListener('click', function() {
+                console.log(`Link clicked: ${this.textContent} - ${this.href}`);
+            });
+        });
+    </script>
+</body>
+</html>
